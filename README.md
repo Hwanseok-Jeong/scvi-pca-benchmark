@@ -223,12 +223,11 @@ To distinguish between these explanations, future work will focus on targeted la
 
 ## Future Work
 
-- Formalize the robustness protocol in the pipeline: pilot N = 3, full runs N ≥ 10, seed-wise summaries, and bootstrap confidence intervals.
-- Add latent-geometry diagnostics, including eigenvalue spectra, isotropy, local density, and neighborhood agreement.
-- Run parameter-sensitivity sweeps for t-SNE and UMAP, then report seed-variance plots and heatmaps.
-- Decide whether an additional baseline such as a simple autoencoder or PCA-whitened variant is worth adding.
-- Expand to additional datasets if the Tasic-only comparison remains stable.
-- Export the pending figures listed above once the remaining runs are complete.
+- Formalize robustness testing through repeated runs, seed-wise summaries, and confidence intervals.
+- Evaluate the effect of embedding initialization by comparing PCA and random initialization strategies across latent representations.
+- Investigate neighborhood preservation using graph-based diagnostics and neighborhood-overlap measures.
+- Perform parameter-sensitivity analyses for t-SNE and UMAP to assess the stability of observed trends.
+- Extend the benchmark to additional scRNA-seq datasets to determine whether the observations generalize beyond the Tasic dataset.
 
 ## References
 - Kobak, D. & Berens, P. *The art of using t-SNE for single-cell transcriptomics.* [Nature Communications (2019)](https://www.nature.com/articles/s41467-019-13055-y)
